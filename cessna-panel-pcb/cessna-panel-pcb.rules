@@ -1,0 +1,79 @@
+
+(rules PCB cessna-panel-pcb
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1197)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 300.0)
+    (clear 200.2)
+    (clear 150.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:300_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:300_um" "Via[0-1]_800:300_um" default
+  )
+  (via 
+    "Via[0-1]_800:300_um-kicad_default" "Via[0-1]_800:300_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:300_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "MASTER_ALT" "FUEL_PUMP" "MASTER_BAT" BCN "MASTER_AVIONIC" LAND TAXI
+    NAV STROBE "START_MAGN" "OFF_MAGN" "R_MAGN" "L_MAGN" "BOTH_MAGN" "PITOT_HEAT"
+    +5V PWM1 PWM2 PWM3 PWM4 PWM5 PWM6 PWM7
+    PWM8 PWM9 PWM10 PWM11 PWM12
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
