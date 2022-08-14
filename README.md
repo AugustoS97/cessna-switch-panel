@@ -8,7 +8,7 @@ Panel para interruptores de luces y magnetos para Cessna 172 y otros simuladores
 
 ![PCB Bottom](/Photos/Render-cessna-panel-pcb-4.png)
 
-![Panel](/Photos/Panel.png)
+![Panel](/Photos/Panel.jpg)
 
 ## Contenido del proyecto
 
