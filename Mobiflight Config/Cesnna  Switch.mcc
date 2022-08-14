@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="6d756bbe-265a-4ea4-814e-ed68d5eacd33">
+      <active>true</active>
+      <description>Fuel Pump Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="FUEL_PUMP_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:GENERAL ENG FUEL PUMP SWITCH:1, Bool) 0 == if{ (&gt;K:TOGGLE_ELECT_FUEL_PUMP) }" presetId="f893567f-445c-44fc-92f7-524532c8f8e1" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:GENERAL ENG FUEL PUMP SWITCH:1, Bool) 1 == if{ (&gt;K:TOGGLE_ELECT_FUEL_PUMP) }" presetId="11369bde-ba37-4ad5-8e45-9777d344fd07" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="05e27e94-7878-435b-9739-1c0091864728">
+      <active>true</active>
+      <description>Pitot Heat Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="PITOT_HT_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:PITOT_HEAT_ON)" presetId="ce094f1c-281d-4cec-bdec-a2487fa9d1d0" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:PITOT_HEAT_OFF)" presetId="441ec40a-3c27-42f2-8834-8d2a1e940dc1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6c80f129-727a-4c6c-9e5c-2214b6ee0fcd">
+      <active>true</active>
+      <description>Land Light Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="LAND_SW_LIGHT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:LANDING_LIGHTS_ON)" presetId="35e4eeec-24be-415e-84f2-adc360882d7f" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:LANDING_LIGHTS_OFF)" presetId="3988a3a1-613e-4128-8af8-fd72c1a441ca" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b0cd2010-a90f-445d-af6a-8ad5256b8f61">
+      <active>true</active>
+      <description>Alt Switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="MASTER_ALT_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:GENERAL ENG MASTER ALTERNATOR:1, Bool) 0 == if{ 1 (&gt;K:TOGGLE_ALTERNATOR1) }" presetId="6bbd0554-e462-4757-9b2e-02aadf88b369" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:GENERAL ENG MASTER ALTERNATOR:1, Bool) 1 == if{ 1 (&gt;K:TOGGLE_ALTERNATOR1) }" presetId="7e3146df-8a59-46ac-8820-1b237992a175" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2965a91f-f5ff-42ac-bcf4-ca8188610db3">
+      <active>true</active>
+      <description>Bat Switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="MASTER_BAT_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:ELECTRICAL MASTER BATTERY:1, Bool) 0 == if{ 1 (&gt;K:TOGGLE_MASTER_BATTERY) }" presetId="1cd8a184-3533-4f10-9547-66f786350453" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:ELECTRICAL MASTER BATTERY:1, Bool) 1 == if{ 1 (&gt;K:TOGGLE_MASTER_BATTERY) }" presetId="8bec73e0-1b2f-4cdf-b5a7-38705efb0fb8" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dad95c5e-caf0-4bf9-97c7-9938e282591c">
+      <active>true</active>
+      <description>Avionic Switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="MASTER_AVIONIC_S" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:24, Bool) ! if{ 24 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } &#xA;(A:CIRCUIT SWITCH ON:24, Bool) 1 (&gt;A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:4, Bool) != if{ 4 1 (&gt;K:2:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE) }" presetId="cb46e874-c2d4-40b4-ac09-2b617628252b" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:24, Bool) if{ 24 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } &#xA;(A:CIRCUIT SWITCH ON:24, Bool) 1 (&gt;A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:4, Bool) != if{ 4 1 (&gt;K:2:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE) }" presetId="6f9f4b50-e1fd-4749-ae27-b46726523b7c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="90757bd9-881e-4225-8a31-6fdc3d9afc22">
+      <active>true</active>
+      <description>Magneto off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="OFF_MAGN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_OFF)" presetId="7f359c38-133e-405f-93a0-0df063b93dbc" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6bbffde2-349b-4268-8e84-b841755ebb15">
+      <active>true</active>
+      <description>Magneto R</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="R_MAGN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_RIGHT)" presetId="6a93954b-67e7-4d2d-9e88-5ad98819d93d" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7dfa5d6b-14e6-4dca-bea6-8fa95d423bf8">
+      <active>true</active>
+      <description>Magneto L</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="L_MAGN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_LEFT)" presetId="f10342df-b8d4-4a36-9782-5efe43dde583" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c58feb2a-9aa8-467f-b9ab-a1bc143edc05">
+      <active>true</active>
+      <description>Magneto Both</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="BOTH_MAGN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_BOTH)" presetId="c3a08616-fc8f-4448-98d1-53785b608ae5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="32349464-ffbd-4df7-86d8-902e648b2967">
+      <active>true</active>
+      <description>Magneto Start</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="START_MAGN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_START)" presetId="89b50022-a05b-490a-9442-f412b502757e" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1a684569-80fa-4ad9-8011-6fb587a3abbd">
+      <active>true</active>
+      <description>Strobe light</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="STROBE_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_STROBE_0)&#xA;0 (&gt;L:STROBE_0_Auto) 1 0 r (&gt;K:2:STROBES_SET)" presetId="b16d3396-e6a2-4d00-a193-81068b7240fa" />
+          <onRelease type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_STROBE_0)&#xA;0 (&gt;L:STROBE_0_Auto) 0 0 r (&gt;K:2:STROBES_SET)" presetId="909a1e70-5ea4-4d9c-b043-7ed97e60c364" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="98d12cdf-d84d-4da9-9a0a-e08173a3cf26">
+      <active>true</active>
+      <description>Taxi light</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="TAXI_SW_LIGHT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:TAXI_LIGHTS_SET)" presetId="de6a10e9-de1b-41ca-90bc-77b5faf9f660" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:TAXI_LIGHTS_SET)" presetId="d4c024a6-e293-441d-84f8-e26c3ec13f7f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="41b85661-a82c-4f24-bb3b-862a7bd56d6d">
+      <active>true</active>
+      <description>Nav Light</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="NAV_SW_LIGHT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:NAV_LIGHTS_SET)" presetId="4d3c4792-81b2-4170-a177-c63452540194" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:NAV_LIGHTS_SET)" presetId="1b199647-edfa-40f1-b2ca-8b004598c403" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7ff49301-a0f6-46cd-b54f-687bb69f9010">
+      <active>true</active>
+      <description>BCN light</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=null" serial="Mega Switches/ SN-31ÿÿÿÿÿÿMobiFlight Mega" name="BCN_SW_LIGHT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:BEACON_LIGHTS_SET)" presetId="876cc2ca-f2f3-4976-b127-2de104ad6ff8" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:BEACON_LIGHTS_SET)" presetId="d7e202e2-11c8-4793-87ac-33b107e10c4c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59c26d6b-f776-467d-991d-f02c162ac8e0">
+      <active>false</active>
+      <description />
+    </config>
+  </inputs>
+</MobiflightConnector>

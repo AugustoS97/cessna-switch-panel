@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Mega Switches</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="FUEL_PUMP_SW" Pin="14" />
+  <Button Name="BCN_SW_LIGHT" Pin="15" />
+  <Button Name="LAND_SW_LIGHT" Pin="16" />
+  <Button Name="TAXI_SW_LIGHT" Pin="17" />
+  <Button Name="NAV_SW_LIGHT" Pin="18" />
+  <Button Name="STROBE_SW" Pin="19" />
+  <Button Name="PITOT_HT_SW" Pin="20" />
+  <Button Name="MASTER_ALT_SW" Pin="21" />
+  <Button Name="MASTER_BAT_SW" Pin="22" />
+  <Button Name="MASTER_AVIONIC_S" Pin="23" />
+  <Button Name="OFF_MAGN" Pin="24" />
+  <Button Name="R_MAGN" Pin="25" />
+  <Button Name="L_MAGN" Pin="26" />
+  <Button Name="BOTH_MAGN" Pin="27" />
+  <Button Name="START_MAGN" Pin="28" />
+</Config>
